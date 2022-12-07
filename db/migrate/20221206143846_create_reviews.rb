@@ -4,7 +4,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.string :description
       t.integer :restaurant_id
       t.integer :critic_id 
-      t.integer :date_published
+      t.string :date_published
     end
   end
 end
