@@ -1,4 +1,3 @@
-require "faker"
 puts "Deleting old data..."
 
 Critic.destroy_all

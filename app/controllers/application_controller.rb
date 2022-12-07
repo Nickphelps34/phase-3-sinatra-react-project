@@ -5,5 +5,10 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
+ get "/all_restaurants" do
+  restaurants = Restaurant.all
+  restaurants.to_json  
+ end  
+
 
 end
