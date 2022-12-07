@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2022_12_06_143923) do
     t.string "description"
     t.integer "restaurant_id"
     t.integer "critic_id"
-    t.string "date_published"
+    t.integer "date_published"
   end
 
 end

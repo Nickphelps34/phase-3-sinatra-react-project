@@ -11,11 +11,38 @@ end
   restaurants.to_json(include: :critics)  
  end 
 
+ post "/restaurants" do 
+  Restaurant.create(name: params[:name], michelin_stars: params[:price], location: params[:location], cuisine: params[:cuisine], health_hazards: params[:health_hazards]).to_json
+ end
+
+ delete "/restaurants/:id" do 
+  Restaurant.find(params[:id]).destroy
+ end
+
  get "/critics" do 
   critics = Critic.all
   critics.to_json(include: :reviews)  
  end
 
+ post "/critics" do 
+  Critic.create(first_name: params[:first_name], last_name: params[:last_name], age: params[:age], gender: params[:gender], gender: params[:gender], celebrity: params[:celebrity]).to_json
+ end
 
+ delete "/critics/:id" do 
+  Critic.find(params[:id]).destroy
+ end
 
+#  post "/critics" do
+  
+#  end
 end
+
+# post "/inventories" do
+#   #binding.pry
+# inventory = Inventory.create(hat_name: params[:hat_name], price: params[:price], quantity: params[:quantity], image_url: params[:image_url], description: params[:description], store_id: params[:store_id]).to_json
+# end
+
+# delete "/inventories/:id" do 
+# inventory = Inventory.find(params[:id]).destroy
+# end
+
