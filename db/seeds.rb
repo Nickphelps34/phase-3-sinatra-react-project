@@ -101,41 +101,65 @@ puts "Creating review data..."
     description: Faker::Restaurant.review,
     date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
     restaurant_id: all_restaurants.sample.id,
-    critic_id: oprah_winfrey.id
+    critic_id: non_celebrities.sample.id 
   )
 end
 
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: non_celebrities.sample.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: oprah_winfrey.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: phil_rosenthal.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: guy_fieri.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: steve_buscami.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: ada_lovelace.id
+  
 ) 
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: all_restaurants.sample.id,
   critic_id: lady_gaga.id
+  
 )
 Review.create(
+  description: Faker::Restaurant.review,
+  date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09'),
   restaurant_id: gordon_ramsey_restaurant.id,
   critic_id: gordon_ramsey.id
+  
 )
 
 puts "✅ Finish lol"
