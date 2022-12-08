@@ -8,7 +8,7 @@ end
 
  get "/restaurants" do
   restaurants = Restaurant.all
-  restaurants.to_json(include: :critics)  
+  restaurants.to_json(include: [:critics, :reviews])  
  end 
 
  post "/restaurants" do 
@@ -25,7 +25,12 @@ end
  end
 
  post "/critics" do 
+  binding.pry
   Critic.create(first_name: params[:first_name], last_name: params[:last_name], age: params[:age], gender: params[:gender], gender: params[:gender], celebrity: params[:celebrity]).to_json
+ end
+
+ patch "/critics/:id" do 
+  Critic.find(params[:id])
  end
 
  delete "/critics/:id" do 
