@@ -5,6 +5,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.integer :restaurant_id
       t.integer :critic_id 
       t.string :date_published
+      t.integer :likes
     end
   end
 end

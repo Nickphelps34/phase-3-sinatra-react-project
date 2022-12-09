@@ -27,12 +27,13 @@ ActiveRecord::Schema.define(version: 2022_12_06_143923) do
     t.string "cuisine"
     t.boolean "health_hazards"
   end
-
+  
   create_table "reviews", force: :cascade do |t|
     t.string "description"
     t.integer "restaurant_id"
     t.integer "critic_id"
     t.string "date_published"
+    t.integer "likes"
   end
 
 end

@@ -125,7 +125,8 @@ puts "Creating review data..."
     description: Faker::Restaurant.review,
     date_published: Faker::Date.between(from: '2020-01-01', to: '2021-01-06').to_formatted_s(:long),
     restaurant_id: all_restaurants.sample.id,
-    critic_id: non_celebrities.sample.id 
+    critic_id: non_celebrities.sample.id,
+    likes: 85
   )
 end
 
@@ -133,70 +134,80 @@ Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: oprah_winfrey.id
+  critic_id: oprah_winfrey.id,
+  likes: 829
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: phil_rosenthal.id
+  critic_id: phil_rosenthal.id,
+  likes: 3921
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: guy_fieri.id
+  critic_id: guy_fieri.id,
+  likes: 123
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: steve_buscami.id
+  critic_id: steve_buscami.id,
+  likes: 41324
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: ada_lovelace.id
+  critic_id: ada_lovelace.id,
+  likes: 28903
   
 ) 
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: lady_gaga.id
+  critic_id: lady_gaga.id,
+  likes: 28130
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: gordon_ramsey_restaurant.id,
-  critic_id: gordon_ramsey.id
+  critic_id: gordon_ramsey.id,
+  likes: 124124
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: sam_smith.id
+  critic_id: sam_smith.id,
+  likes: 123123
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: janelle_monae.id
+  critic_id: janelle_monae.id,
+  likes: 2817
   
 )
 Review.create(
   description: Faker::Restaurant.review,
   date_published: Faker::Date.between(from: '2017-1-01', to: '2022-12-09').to_formatted_s(:long),
   restaurant_id: all_restaurants.sample.id,
-  critic_id: demi_lovato.id
+  critic_id: demi_lovato.id,
+  likes: 8297
   
 )
 
